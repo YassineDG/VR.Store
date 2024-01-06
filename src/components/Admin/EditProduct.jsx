@@ -16,8 +16,8 @@ export default function EditProduct() {
   const [categories, setCategories] = useState([]);
 
   const fetchProductAndCategories = async () => {
-    const productResponse = await axios.get(`https://backend-vr-store-959276e1a5d9.herokuapp.com/api/dashboard/products/${id}`);
-    const categoriesResponse = await axios.get("https://backend-vr-store-959276e1a5d9.herokuapp.com/api/categories");
+    const productResponse = await axios.get(`https://vr-backend-production-9494.up.railway.app/api/dashboard/products/${id}`);
+    const categoriesResponse = await axios.get("https://vr-backend-production-9494.up.railway.app/api/categories");
 
     setProduct_name(productResponse.data.product.product_name);
     setCategory(productResponse.data.product.category._id);
@@ -42,7 +42,7 @@ export default function EditProduct() {
       description,
       countInStock,
     };
-    await axios.put(`https://backend-vr-store-959276e1a5d9.herokuapp.com/api/dashboard/products/${id}`, updatedProduct);
+    await axios.put(`https://vr-backend-production-9494.up.railway.app/api/dashboard/products/${id}`, updatedProduct);
     navigate("/dashboard");
   };
 

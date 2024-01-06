@@ -8,7 +8,7 @@ function CategorySelect({ setSelectedCategory }) {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('https://backend-vr-store-959276e1a5d9.herokuapp.com/api/categories');
+        const response = await axios.get('https://vr-backend-production-9494.up.railway.app/api/categories');
         setCategories(response.data);
       } catch (err) {
         console.error(err);

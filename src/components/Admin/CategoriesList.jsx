@@ -12,7 +12,7 @@ function CategoriesList() {
 
   const getCategories = async () => {
     try {
-      const response = await axios.get("https://backend-vr-store-959276e1a5d9.herokuapp.com/api/categories");
+      const response = await axios.get("https://vr-backend-production-9494.up.railway.app/api/categories");
       setCategories(response.data);
     } catch (err) {
       console.error(err);
@@ -21,7 +21,7 @@ function CategoriesList() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://backend-vr-store-959276e1a5d9.herokuapp.com/api/categories/${id}`);
+      await axios.delete(`https://vr-backend-production-9494.up.railway.app/api/categories/${id}`);
       getCategories();
       toast.success("Category deleted successfully"); // Added success toast for delete
     } catch (err) {

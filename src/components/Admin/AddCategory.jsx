@@ -17,7 +17,7 @@ export default function AddCategory() {
 
     try {
       const response = await axios.post(
-        "https://backend-vr-store-959276e1a5d9.herokuapp.com/api/categories",
+        "https://vr-backend-production-9494.up.railway.app/api/categories",
         { name: categoryName }
       );
       console.log(response);

@@ -29,7 +29,7 @@ const ProductList = () => {
 
   // Fetch products from your API
   useEffect(() => {
-    axios.get("https://backend-vr-store-959276e1a5d9.herokuapp.com/api/products")
+    axios.get("https://vr-backend-production-9494.up.railway.app/api/products")
       .then((res) => {
         setProducts(res.data);
       })
