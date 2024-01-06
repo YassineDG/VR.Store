@@ -60,7 +60,7 @@ To get started with the project, follow these steps:
 
 ## Deployment
 
-The backend is deployed on Heroku and the frontend is hosted on Vercel.
+The backend is deployed on Railway and the frontend is hosted on Vercel.
 
 
 Note! its take long timme to loading because vercel with high quality for the pcis and video (background home)
