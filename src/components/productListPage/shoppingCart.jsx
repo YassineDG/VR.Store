@@ -16,7 +16,7 @@ export default function ShoppingCart() {
         <Card className='shopCart' key={item._id}>
           <Row className='w-100'>
             <Col lg={4} style={{ paddingLeft: 0 }}>
-              <Card.Img variant="top" loading="lazy" src={`https://vr-backend-production-9494.up.railway.app/uploads/${item.image}`} />
+              <Card.Img variant="top" loading="lazy" src={`https://vr-backend-6e7h.onrender.com/uploads/${item.image}`} />
             </Col>
             <Col lg={6} style={{ padding: 0 }}>
               <Card.Body>
