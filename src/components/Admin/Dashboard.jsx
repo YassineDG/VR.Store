@@ -13,13 +13,13 @@ export default function Dashboard() {
   const navigate = useNavigate();
 
   async function getProducts() {
-    await axios.get("https://vr-backend-production-9494.up.railway.app/api/products").then((response) => {
+    await axios.get("https://vr-backend-6e7h.onrender.com/api/products").then((response) => {
       setProducts(response.data);
     });
   }
 
   async function deleteProduct(id) {
-    await axios.delete(`https://vr-backend-production-9494.up.railway.app/api/dashboard/products/${id}`);
+    await axios.delete(`https://vr-backend-6e7h.onrender.com/api/dashboard/products/${id}`);
     setProducts(products.filter((product) => product._id !== id));
     toast.success("Product deleted successfully!");
   }
