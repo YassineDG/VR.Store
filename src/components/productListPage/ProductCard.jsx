@@ -23,7 +23,7 @@ const dispatch = useDispatch();
         {products.map((product, index) => (
           <Col sm={12} md={6} lg={4} key={product._id}>
             <Card className="card product mb-4" style={{backgroundColor: darkMode ? "#857eab" : "#fff"}}>
-            <Card.Img className="product-image" variant="top" loading="lazy" src={`https://vr-backend-production-9494.up.railway.app/uploads/${product.image}`} />
+            <Card.Img className="product-image" variant="top" loading="lazy" src={`https://vr-backend-6e7h.onrender.com/uploads/${product.image}`} />
               <Card.Body >
                 <div className="namePrice">
                   <Card.Title className="titleProduct">{product.product_name}</Card.Title>
