@@ -15,7 +15,7 @@ export default function Register() {
   const registerUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://vr-backend-production-9494.up.railway.app/api/users/register', {
+      const response = await axios.post('https://vr-backend-6e7h.onrender.com/api/users/register', {
         email,
         password
       });
