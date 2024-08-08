@@ -17,7 +17,7 @@ export default function AddCategory() {
 
     try {
       const response = await axios.post(
-        "https://vr-backend-production-9494.up.railway.app/api/categories",
+        "https://vr-backend-6e7h.onrender.com/api/categories",
         { name: categoryName }
       );
       console.log(response);
