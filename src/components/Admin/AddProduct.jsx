@@ -26,7 +26,7 @@ export default function AddProduct() {
  useEffect(() => {
    const fetchCategories = async () => {
      try {
-       const res = await axios.get("https://vr-backend-production-9494.up.railway.app/api/categories");
+       const res = await axios.get("https://vr-backend-6e7h.onrender.com/api/categories");
        setCategories(res.data);
      } catch (err) {
        console.error(err);
@@ -50,7 +50,7 @@ export default function AddProduct() {
 
    try {
      const response = await axios.post(
-       "https://vr-backend-production-9494.up.railway.app/api/products",
+       "https://vr-backend-6e7h.onrender.com/api/products",
        formData
      );
      console.log(response);
