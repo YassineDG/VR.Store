@@ -12,7 +12,7 @@ function CategoriesList() {
 
   const getCategories = async () => {
     try {
-      const response = await axios.get("https://vr-backend-6e7h.onrender.com/api/categories");
+      const response = await axios.get("https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/categories");
       setCategories(response.data);
     } catch (err) {
       console.error(err);
@@ -21,7 +21,7 @@ function CategoriesList() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://vr-backend-6e7h.onrender.com/api/categories/${id}`);
+      await axios.delete(`https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/categories/${id}`);
       getCategories();
       toast.success("Category deleted successfully"); // Added success toast for delete
     } catch (err) {
