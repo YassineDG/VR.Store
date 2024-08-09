@@ -17,7 +17,7 @@ export default function AddCategory() {
 
     try {
       const response = await axios.post(
-        "https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/categories",
+        "https://fond-harlene-yassinedorgaa-7ff07ac1.koyeb.app/api/categories",
         { name: categoryName }
       );
       console.log(response);
