@@ -50,7 +50,7 @@ export default function AddProduct() {
 
    try {
      const response = await axios.post(
-       "https://vr-backend-6e7h.onrender.com/api/products",
+       "https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/products",
        formData
      );
      console.log(response);
