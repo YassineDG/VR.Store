@@ -26,7 +26,7 @@ export default function AddProduct() {
  useEffect(() => {
    const fetchCategories = async () => {
      try {
-       const res = await axios.get("https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/categories");
+       const res = await axios.get("https://fond-harlene-yassinedorgaa-7ff07ac1.koyeb.app/api/categories");
        setCategories(res.data);
      } catch (err) {
        console.error(err);
@@ -50,7 +50,7 @@ export default function AddProduct() {
 
    try {
      const response = await axios.post(
-       "https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/products",
+       "https://fond-harlene-yassinedorgaa-7ff07ac1.koyeb.app/api/products",
        formData
      );
      console.log(response);
