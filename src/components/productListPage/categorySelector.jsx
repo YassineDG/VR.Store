@@ -8,7 +8,7 @@ function CategorySelect({ setSelectedCategory }) {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/categories');
+        const response = await axios.get('https://fond-harlene-yassinedorgaa-7ff07ac1.koyeb.app/api/categories');
         setCategories(response.data);
       } catch (err) {
         console.error(err);
