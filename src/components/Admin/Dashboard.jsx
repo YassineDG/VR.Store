@@ -13,13 +13,13 @@ export default function Dashboard() {
   const navigate = useNavigate();
 
   async function getProducts() {
-    await axios.get("https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/products").then((response) => {
+    await axios.get("https://fond-harlene-yassinedorgaa-7ff07ac1.koyeb.app/api/products").then((response) => {
       setProducts(response.data);
     });
   }
 
   async function deleteProduct(id) {
-    await axios.delete(`https://compact-andreana-yassinedorgaa-8d899ac9.koyeb.app/api/dashboard/products/${id}`);
+    await axios.delete(`https://fond-harlene-yassinedorgaa-7ff07ac1.koyeb.app/api/dashboard/products/${id}`);
     setProducts(products.filter((product) => product._id !== id));
     toast.success("Product deleted successfully!");
   }
